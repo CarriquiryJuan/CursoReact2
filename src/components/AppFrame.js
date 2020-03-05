@@ -6,7 +6,7 @@ const AppFrame = ({header, body, footer}) => {
     return (
         <div>
             <div className="app-frame">
-                <AppHeader title= {header}></AppHeader>
+                <AppHeader title={header}></AppHeader>
                 <div>
                     {body}
                 </div>
@@ -19,8 +19,7 @@ const AppFrame = ({header, body, footer}) => {
     );
 };
 
-AppFrame.propTypes = {
-    title: PropTypes.string.isRequired,
+AppFrame.propTypes = {    
     header: PropTypes.string.isRequired,
     body: PropTypes.element.isRequired,
 };
